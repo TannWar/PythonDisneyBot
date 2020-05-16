@@ -1,4 +1,4 @@
-# disneyland scraping for thedisneybot
+# Disneyland picture scraping for thedisneybot
 
 import requests
 from bs4 import BeautifulSoup as bs
@@ -14,7 +14,7 @@ soup = bs(page.text, 'html.parser')
 # locate all elements with image tag
 image_tags = soup.findAll('img')
 
-# create directory for disneyland images
+# create directory for Disneyland images
 if not os.path.exists('disneyland'):
     os.makedirs('disneyland')
 
