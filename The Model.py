@@ -1,4 +1,4 @@
-# themodelbot
+# thedisneybot
 
 import tweepy as tp
 import time
@@ -17,7 +17,7 @@ api = tp.API(auth)
 
 os.chdir('disneyland')
 
-# iterates over pictures in models folder
+# iterates over pictures in disneyland folder
 for disneyland_image in os.listdir('.'):
     api.update_with_media(disneyland_image)
     time.sleep(60)
